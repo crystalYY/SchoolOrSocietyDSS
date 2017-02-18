@@ -1,0 +1,62 @@
+/*全局样式*/
+body{
+	word-break: break-all;
+	font-family: "微软雅黑","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+}
+h5{font-weight: bold; padding-left: 15px;}
+h5 span{color: red;font-weight: bold;padding-left: 5px; font-size: 18px;}
+li{font-weight: bold; padding-bottom:15px; border-bottom: 1px solid #cccccc; margin-bottom: 30px;}
+/*--全局样式--*/
+.title{
+	background-color: #7E827A;
+	margin-bottom: 50px;
+	padding: 20px;
+}
+.caption{
+	color:#fff;
+	font-family: "Microsoft Yahei";;
+}
+.content form label{
+	padding-left:35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: block;	
+}
+.content form label:hover{
+	background-color: #E2F0D6;
+}
+.content form label span{	
+	margin-left: 10px;
+	background-color: #C77966;
+}
+.content form h5 em{
+	color: #3498DB;
+}
+.content form p{
+	font-size: 12px;
+	margin-top: -15px;
+	margin-bottom: 15px;
+	color: #2980B9;
+}
+.content form #character label{
+	display: block-inline;
+}
+.subt{
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+}
+footer{
+	margin-top: 60px;
+	height: 100px;
+	background-color: #2f343b;
+}
+footer p{
+	color: #fff;
+	font-size: 16px;
+	line-height: 100px;
+	margin: 0 100px;
+}
+footer p a{
+	margin-left: 20px;
+}

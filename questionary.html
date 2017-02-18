@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="基于数据的科学决策系统">
+    <meta name="keywords" content="data, model, dss, 决策支持系统, 考研, 就业, 决策">
+    <meta name="author" content="XTU Grass team">
+	<title>questionary</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/questionary.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row title">
+			<div class="col-sm-10 col-sm-offset-1 col-xs-12">
+				<h3 class="text-center caption">大学生考研就业辅助决策系统</h3>
+			</div>
+		</div>
+		<div class="row content">
+			<div class="col-sm-12">
+				<form action="#" name="questionary" method="post" autocomplete="on">
+					<ol>
+						<div class="radio">
+							<li>
+								<h5>您最终选择的是考研还是就业<span>*</span></h5>
+								<label>
+						    		<input type="radio" name="one" id="one1" value="考研">
+						    			考研
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="one" id="one2" value="就业">
+						    			就业
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="one" id="one3" value="其他">
+						    			其他
+						  		</label>
+							</li>
+
+							<li>
+								<h5>您现在是大几或者已经毕业<span>*</span></h5>
+								<label>
+						    		<input type="radio" name="two" id="two1" value="大一">
+						    			大一
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="two" id="two2" value="大二">
+						    			大二
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="two" id="two3" value="大三">
+						    			大三
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="two" id="two4" value="大四">
+						    			大四
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="two" id="two5" value="已经毕业">
+						    			已经毕业
+						  		</label>
+							</li>
+
+							<li>
+								<h5>您在大学期间是否担任过项目研究或开发中的重要工作<span>*</span></h5>
+								<label>
+						    		<input type="radio" name="three" id="three1" value="没有">
+						    			没有
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="three" id="three2" value="一次">
+						    			一次
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="three" id="three3" value="两次">
+						    			两次
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="three" id="three4" value="三次及三次以上">
+						    			三次及三次以上
+						  		</label>					
+							</li>
+
+							<li>
+								<h5>您在大学期间是否有和专业相关的实习经历<span>*</span></h5>
+								<label>
+						    		<input type="radio" name="four" id="four1" value="没有">
+						    			没有
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="four" id="four2" value="一次">
+						    			一次
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="four" id="four3" value="两次">
+						    			两次
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="four" id="four4" value="三次及三次以上">
+						    			三次及三次以上
+						  		</label>					
+							</li>
+
+							<li>
+								<h5>实习中您认为您的能力是否能够胜任工作<span>*</span></h5>
+								<label>
+						    		<input type="radio" name="five" id="five1" value="不能">
+						    			不能
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="five" id="five2" value="胜任一小部分">
+						    			胜任一小部分
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="five" id="five3" value="胜任绝大部分">
+						    			胜任绝大部分
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="five" id="five4" value="完全胜任">
+						    			完全胜任
+						  		</label>					
+							</li>
+
+							<li>
+								<h5>您是否在大学期间获得省级及省级以上荣誉<span>*</span></h5>
+								<label>
+						    		<input type="radio" name="six" id="six1" value="没有">
+						    			没有
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="six" id="six2" value="一个到两个">
+						    			一个到两个
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="six" id="six3" value="三个到五个">
+						    			三个到五个
+						  		</label>
+						  		<label>
+						    		<input type="radio" name="six" id="six4" value="五个以上">
+						    			五个以上
+						  		</label>					
+							</li>
+
+							<li>
+								<h5>您是否做过学生工作<span>*</span></h5>
+								<label>
+									<input type="radio" name="seven" id="seven1" value="没有">
+									没有
+								</label>
+								<label>
+									<input type="radio" name="seven" id="seven2" value="做过">
+									做过
+								</label>
+							</li>
+
+							<li>
+								<h5>您是否在大学期间考取了一些证书(包括所有证书)<span>*</span></h5>
+								<label>
+									<input type="radio" name="eight" id="eight1" value="没有">
+									没有
+								</label>
+								<label>
+									<input type="radio" name="eight" id="eight2" value="一个到三个">
+									一个到三个
+								</label>
+								<label>
+									<input type="radio" name="eight" id="eight3" value="四个到五个">
+									四个到五个
+								</label>
+								<label>
+									<input type="radio" name="eight" id="eight4" value="五个以上">
+									五个以上
+								</label>
+							</li>
+
+							<li>
+								<h5>家庭成员的意见或看法会影响您的选择吗<span>*</span></h5>
+								<label>
+									<input type="radio" name="nine" id="nine1" value="不在意">
+									不在意
+								</label>
+								<label>
+									<input type="radio" name="nine" id="nine2" value="部分听取">
+									部分听取
+								</label>
+								<label>
+									<input type="radio" name="nine" id="nine3" value="认真考虑">
+									认真考虑
+								</label>					
+							</li>
+
+							<li>
+								<h5>考研会增加您的家庭负担吗<span>*</span></h5>
+								<label>
+									<input type="radio" name="ten" id="ten1" value="不会，无压力">
+									不会，无压力
+								</label>
+								<label>
+									<input type="radio" name="ten" id="ten2" value="一般">
+									一般
+								</label>
+								<label>
+									<input type="radio" name="ten" id="ten3" value="会，增加很大压力">
+									会，增加很大压力
+								</label>					
+							</li>
+
+							<li>
+								<h5>若选择考研或就业，家庭会为你提供帮助吗<span>*</span></h5>
+								<label>
+									<input type="radio" name="eleven" id="eleven1" value="会">
+									会
+								</label>
+								<label>
+									<input type="radio" name="eleven" id="eleven2" value="不会">
+									不会
+								</label>
+								<label>
+									<input type="radio" name="eleven" id="eleven3" value="不清楚">
+									不清楚
+								</label>
+							</li>
+
+							<li>
+								<h5>您有明确的未来规划吗<span>*</span></h5>
+								<label>
+									<input type="radio" name="twelve" id="twelve1" value="有，对未来有至少十年长远规划">
+									有，对未来有至少十年长远规划
+								</label>
+								<label>
+									<input type="radio" name="twelve" id="twelve2" value="有，对未来五年内的短期规划">
+									有，对未来五年内的短期规划
+								</label>
+								<label>
+									<input type="radio" name="twelve" id="twelve3" value="有目标，但无具体规划">
+									有目标，但无具体规划
+								</label>
+								<label>
+									<input type="radio" name="twelve" id="twelve4" value="暂时没有任何目标或规划">
+									暂时没有任何目标或规划
+								</label>
+							</li>
+
+							<li>
+								<h5>您是否因为“名校情结”而影响你的选择<span>*</span></h5>
+								<label>
+									<input type="radio" name="thirteen" id="thirteen1" value="会">
+									会
+								</label>
+								<label>
+									<input type="radio" name="thirteen" id="thirteen2" value="不会">
+									不会
+								</label>
+								<label>
+									<input type="radio" name="thirteen" id="thirteen3" value="有影响，但不是主要因素">
+									有影响，但不是主要因素
+								</label>					
+							</li>
+						</div>
+						
+						<div class="checkbox">
+							<li>
+								<h5>请对下面的几项外界影响因素按照相对重要性排序<span>*</span><em>[请选择1-3项并排序]</em></h5>
+								<label>
+									<input type="checkbox" name="friends" id="friends" value="friends">
+									朋友影响 <span class="badge">1</span>
+								</label>
+								<label>
+									<input type="checkbox" name="lover" id="lover" value="lover">
+									恋人影响<span class="badge"></span>
+								</label>
+								<label>
+									<input type="checkbox" name="policy" id="policy" value="policy">
+									国家政策的影响<span class="badge"></span>
+								</label>
+								<label>
+									<input type="checkbox" name="situation" id="situation" value="situation">
+									当前的考研就业形势<span class="badge"></span>
+								</label>
+								<label>
+									<input type="checkbox" name="job" id="job" value="job">
+									已了解的用人单位的要求<span class="badge"></span>
+								</label>
+								<label>
+									<input type="checkbox" name="chance" id="chance" value="chance">
+									突然地机遇<span class="badge"></span>
+								</label>
+								<label>
+									<input type="checkbox" name="others" id="others" value="others">
+									其他<span class="badge"></span>
+								</label>
+							</li>
+							<p>您已经选择了<span id="totalFactor1">2</span>项</p>
+						</div>
+
+						<div class="radio">
+							<li>
+								<h5>您的专业属于<span>*</span></h5>
+								<label>
+									<input type="radio" name="fifteen" id="fifteen1" value="法学、管理学、艺术学">
+									法学、管理学、艺术学
+								</label>
+								<label>
+									<input type="radio" name="fifteen" id="fifteen2" value="医学、教育学、文史哲">
+									医学、教育学、文史哲
+								</label>
+								<label>
+									<input type="radio" name="fifteen" id="fifteen3" value="理学、工学、经济学、农学">
+									理学、工学、经济学、农学
+								</label>
+							</li>
+
+							<li>
+								<h5>您的性别<span>*</span></h5>
+								<label>
+									<input type="radio" name="sixteen" id="sixteen1" value="male">
+									男生
+								</label>
+								<label>
+									<input type="radio" name="sixteen" id="sixteen2" value="female">
+									女生
+								</label>
+							</li>							
+						</div>	
+
+						<div class="checkbox" id="character">
+							<li>
+								<h5>您有下列哪些性格特质<span>*</span><em>[请选择1-4项]</em></h5>
+								<div class="row">
+									<div class="col-sm-8 col-xs-12">
+										<div class="row">
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen1" id="seventeen1" value="聪明">
+													聪明
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen2" id="seventeen2" value="自信">
+													自信
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen3" id="seventeen3" value="乐观">
+													乐观
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen4" id="seventeen4" value="勤奋">
+													勤奋
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen5" id="seventeen5" value="踏实">
+													踏实
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen6" id="seventeen6" value="果断">
+													果断
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen7" id="seventeen7" value="理性">
+													理性
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen8" id="seventeen8" value="好奇">
+													好奇
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen9" id="seventeen9" value="梦想型">
+													梦想型
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen10" id="seventeen10" value="独立型">
+													独立型
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen11" id="seventeen11" value="尽责型">
+													尽责型
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen12" id="seventeen12" value="外向型">
+													外向型
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventeen13" id="seventeen13" value="亲和型">
+													亲和型
+												</label>
+											</div>
+											<div class="col-sm-3 col-xs-6">
+												<label>
+													<input type="checkbox" name="seventee14" id="seventeen14" value="情绪稳定型">
+													情绪稳定型
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>								
+							</li>
+							<p>您已经选择了<span id="totalFactor2">2</span>项</p>							
+						</div>	
+
+						<div class="radio">
+							<li>
+								<h5>您对自己的专业感兴趣吗<span>*</span></h5>
+								<label>
+									<input type="radio" name="eighteen" id="eighteen1" value="很感兴趣">
+									很感兴趣
+								</label>
+								<label>
+									<input type="radio" name="eighteen" id="eighteen2" value="一般">
+									一般
+								</label>
+								<label>
+									<input type="radio" name="eighteen" id="eighteen3" value="没什么兴趣">
+									没什么兴趣
+								</label>
+							</li>
+
+							<li>
+								<h5>您的学校属于<span>*</span></h5>
+								<label>
+									<input type="radio" name="eighteen" id="eighteen1" value="一本">
+									一本
+								</label>
+								<label>
+									<input type="radio" name="eighteen" id="eighteen2" value="二本">
+									二本
+								</label>
+								<label>
+									<input type="radio" name="eighteen" id="eighteen3" value="三本">
+									三本
+								</label>
+								<label>
+									<input type="radio" name="eighteen" id="eighteen2" value="专科">
+									专科
+								</label>
+								<label>
+									<input type="radio" name="eighteen" id="eighteen3" value="其他">
+									其他
+								</label>
+							</li>
+						</div>					
+					</ol>
+					<button type="submit" class="btn btn-info subt">提交</button>
+				</form>				
+			</div>		
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<footer>
+				<p class="pull-left">Copyright © 2017 XTU Grass Team. All rights reserved. </p>
+				<p class="pull-right">
+					<a href="https://github.com/crystalYY/SchoolOrSocietyDSS" target="_blank"><img src="img/github.png" alt="github"></a>
+					<a href="mailto:crystal1995fyy@163.com"><img src="img/email.png" alt="email"></a>
+				</p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
