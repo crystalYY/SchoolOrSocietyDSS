@@ -55,8 +55,21 @@ footer p{
 	color: #fff;
 	font-size: 16px;
 	line-height: 100px;
-	margin: 0 100px;
+	margin-left:10%;
+	margin-right: 10%;
 }
 footer p a{
 	margin-left: 20px;
+}
+@media (max-width: 768px) {
+	.container-fluid .row footer p{
+		color: #fff;
+		font-size: 16px;
+		text-align: center;
+		line-height: 30px;
+	}
+	.row footer .text-left{
+		margin-top: 20px;
+	}
+
 }
