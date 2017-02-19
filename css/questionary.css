@@ -46,6 +46,9 @@ li{font-weight: bold; padding-bottom:15px; border-bottom: 1px solid #cccccc; mar
 	margin: 0 auto;
 	display: block;
 }
+.assist{
+	display: none;
+}
 footer{
 	margin-top: 60px;
 	height: 100px;
@@ -61,7 +64,8 @@ footer p{
 footer p a{
 	margin-left: 20px;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
 	.container-fluid .row footer p{
 		color: #fff;
 		font-size: 16px;

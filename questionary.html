@@ -260,37 +260,40 @@
 							</li>
 						</div>
 						
-						<div class="checkbox" id="sortFactors">
+						<div class="checkbox" >
 							<li>
 								<h5>请对下面的几项外界影响因素按照相对重要性排序<span>*</span><em>[请选择1-3项并排序]</em></h5>
-								<label>
-									<input type="checkbox" name="friends" id="friends" value="friends">
-									朋友影响 <span class="badge"></span>
-								</label>
-								<label>
-									<input type="checkbox" name="lover" id="lover" value="lover">
-									恋人影响<span class="badge"></span>
-								</label>
-								<label>
-									<input type="checkbox" name="policy" id="policy" value="policy">
-									国家政策的影响<span class="badge"></span>
-								</label>
-								<label>
-									<input type="checkbox" name="situation" id="situation" value="situation">
-									当前的考研就业形势<span class="badge"></span>
-								</label>
-								<label>
-									<input type="checkbox" name="job" id="job" value="job">
-									已了解的用人单位的要求<span class="badge"></span>
-								</label>
-								<label>
-									<input type="checkbox" name="chance" id="chance" value="chance">
-									突然地机遇<span class="badge"></span>
-								</label>
-								<label>
-									<input type="checkbox" name="others" id="others" value="others">
-									其他<span class="badge"></span>
-								</label>
+								<div id="sortFactors">
+									<label>
+										<input type="checkbox" name="friends" id="friends" value="friends">
+										朋友影响<span class="badge"></span>
+									</label>
+									<label>
+										<input type="checkbox" name="lover" id="lover" value="lover">
+										恋人影响<span class="badge"></span>
+									</label>
+									<label>
+										<input type="checkbox" name="policy" id="policy" value="policy">
+										国家政策的影响<span class="badge"></span>
+									</label>
+									<label>
+										<input type="checkbox" name="situation" id="situation" value="situation">
+										当前的考研就业形势<span class="badge"></span>
+									</label>
+									<label>
+										<input type="checkbox" name="job" id="job" value="job">
+										已了解的用人单位的要求<span class="badge"></span>
+									</label>
+									<label>
+										<input type="checkbox" name="chance" id="chance" value="chance">
+										突然地机遇<span class="badge"></span>
+									</label>
+									<label>
+										<input type="checkbox" name="others" id="others" value="others">
+										其他<span class="badge"></span>
+									</label>
+								</div>
+								
 							</li>
 							<p>您已经选择了<span id="totalFactor1">0</span>项</p>
 						</div>
@@ -442,29 +445,31 @@
 							<li>
 								<h5>您的学校属于<span>*</span></h5>
 								<label>
-									<input type="radio" name="eighteen" id="eighteen1" value="一本"  required="required">
+									<input type="radio" name="nineteen" id="nineteen1" value="一本"  required="required">
 									一本
 								</label>
 								<label>
-									<input type="radio" name="eighteen" id="eighteen2" value="二本"  required="required">
+									<input type="radio" name="nineteen" id="nineteen2" value="二本"  required="required">
 									二本
 								</label>
 								<label>
-									<input type="radio" name="eighteen" id="eighteen3" value="三本"  required="required">
+									<input type="radio" name="nineteen" id="nineteen3" value="三本"  required="required">
 									三本
 								</label>
 								<label>
-									<input type="radio" name="eighteen" id="eighteen2" value="专科"  required="required">
+									<input type="radio" name="nineteen" id="nineteen4" value="专科"  required="required">
 									专科
 								</label>
 								<label>
-									<input type="radio" name="eighteen" id="eighteen3" value="其他"  required="required">
+									<input type="radio" name="nineteen" id="nineteen5" value="其他"  required="required">
 									其他
 								</label>
 							</li>
 						</div>					
 					</ol>
-					<button type="submit" class="btn btn-info subt">提交</button>
+					<button type="submit" class="btn btn-info subt" id="btn1">提交</button>
+					<a href="#sortFactors" id="locate1" class="assist">one</a>
+					<a href="#character" id="locate2" class="assist">two</a>
 				</form>				
 			</div>		
 		</div>

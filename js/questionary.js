@@ -1,5 +1,129 @@
-$(document).ready(function(){
-	$(':radio').click(function(){
-		alert($(this).val());
-	})
+
+//待解决问题：提交时检查是否sortFactorsArray为空
+
+/*存放最终选择的影响因素的数组,已排序*/
+var sortFactorsArray=[];
+addEvent($('sortFactors'),'click',function(event){
+	var sortFactorsInput=$('sortFactors').getElementsByTagName('input');
+	var tar=event.target||event.srcElement;
+
+	//解决label标签 触发两次点击事件的bug
+	if(tar.nodeName.toLowerCase()=='label'){
+		return;
+	}
+
+	for(var i=0;i<sortFactorsInput.length;i++){
+		sortFactorsInput[i].removeAttribute('disabled');
+	}
+	if(tar.nodeName.toLowerCase()=='input'){
+		//同时满足已选择项为三个并且此次点击的为之前未选择项条件时再把为选的多选项设置为禁用
+		if(sortFactorsArray.length>=3&&tar.checked==true){
+			alert('您已经选择了3项！')
+			tar.checked=false;//设置此次选择无效
+			for(var i=0;i<sortFactorsInput.length;i++){
+				if(sortFactorsInput[i].checked==false){
+					sortFactorsInput[i].setAttribute('disabled','');
+				}
+			}
+		}else{
+			if(tar.checked==true){
+				sortFactorsArray.push(tar.value);//已选择项push进数组
+			}else if(tar.checked==false){
+				sortFactorsArray.removeByValue(tar.value);//选择后又删除的项也从数组中移除
+				getSibling(tar).innerHTML='';
+			}else{
+			}		
+		}				
+	}else{
+	}
+	//计数
+	$('totalFactor1').innerHTML=sortFactorsArray.length;
+	//实时添加序号
+	for(var i=0;i<sortFactorsInput.length;i++){
+		var loca=sortFactorsArray.indexOf(sortFactorsInput[i].value);
+		
+		if(loca!=-1){
+			var orderSpan=getSibling(sortFactorsInput[i]);
+			orderSpan.innerHTML=(loca+1);
+		}
+	}
+		
 });
+
+//character计数器
+var count=0;
+addEvent($('character'),'click',function(event){
+	var tar=event.target||event.srcElement;
+	if(tar.nodeName.toLowerCase()=='label'){
+		return;
+	}
+	
+	var characterInput=this.getElementsByTagName('input');
+	for(var i=0;i<characterInput.length;i++){
+		characterInput[i].removeAttribute('disabled');
+	}
+	if(count>=4&&tar.checked==true){
+		alert('您已经选择了4项！');
+		tar.checked=false;
+		for(var i=0;i<characterInput.length;i++){
+			if(characterInput[i].checked==false){
+				characterInput[i].setAttribute('disabled','');
+			}
+		}
+	}else{
+		if(tar.checked==true){
+			count++;
+		}else if(tar.checked==false){
+			count--;
+		}else{
+		}
+	}
+	
+	$('totalFactor2').innerHTML=count;
+});
+
+//验证表单提交
+addEvent($('btn1'),'click',function(event){
+	if(sortFactorsArray.length==0){
+		$('locate1').click();
+		event.preventDefault();
+		return false;
+	}
+	if(count==0){
+		$('locate2').click();
+		event.preventDefault();
+		return false;
+	}
+});
+
+function $(id){
+	return document.getElementById(id);
+}	
+
+//从数组删除指定值元素
+Array.prototype.removeByValue = function(val) {
+  for(var i=0; i<this.length; i++) {
+    if(this[i] == val) {
+      this.splice(i, 1);
+      break;
+    }
+  }
+}
+
+//事件监听
+function addEvent(obj,event,fn){
+	if(obj.attachEvent){
+		obj.attachEvent('on'+event,fn);
+	}else{
+		obj.addEventListener(event,fn,false);
+	}
+}
+
+//获取兄弟节点
+function getSibling(node){
+	var n=node.nextSibling;
+	while(n&&n.nodeType!=1){//
+		n=n.nextSibling;
+	}
+	return n;
+}
