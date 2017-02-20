@@ -106,31 +106,29 @@ addEvent(document.body,'click',function(event){
 	if(tar.nodeName.toLowerCase()=='label'){
 		return;
 	}
-	if(tar.nodeName.toLowerCase()=='input'){
-		var radioElements=getElementsByClassName('radio');
-		//判断复选框是否选中
-		if(sortFactorsArray.length!=0&&checkBoxMark1){
-			checkBoxMark1=false;
-			compeleCount++;
-		}
-		if(sortFactorsArray.length==0&&!checkBoxMark1){
-			checkBoxMark1=true;
-			compeleCount--;
-		}
-		if(count!=0&&checkBoxMark2){
-			checkBoxMark2=false;
-			compeleCount++;
-		}
-		if(count==0&&!checkBoxMark2){
-			checkBoxMark2=true;
-			compeleCount--;
-		}
-		for(var i=0;i<radioElements.length;i++){
-			var radioInputs=radioElements[i].getElementsByTagName('input');
-			for(var j=0;j<radioInputs.length;j++){
-				if(radioInputs[j].checked==true){
-					compeleCount++;
-				}
+	var radioElements=getElementsByClassName('radio');
+	//判断复选框是否选中
+	if(sortFactorsArray.length!=0&&checkBoxMark1){
+		checkBoxMark1=false;
+		compeleCount++;
+	}
+	if(sortFactorsArray.length==0&&!checkBoxMark1){
+		checkBoxMark1=true;
+		compeleCount--;
+	}
+	if(count!=0&&checkBoxMark2){
+		checkBoxMark2=false;
+		compeleCount++;
+	}
+	if(count==0&&!checkBoxMark2){
+		checkBoxMark2=true;
+		compeleCount--;
+	}
+	for(var i=0;i<radioElements.length;i++){
+		var radioInputs=radioElements[i].getElementsByTagName('input');
+		for(var j=0;j<radioInputs.length;j++){
+			if(radioInputs[j].checked==true){
+				compeleCount++;
 			}
 		}
 	}
