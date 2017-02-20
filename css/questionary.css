@@ -65,6 +65,35 @@ footer p a{
 	margin-left: 20px;
 }
 
+/*进度条*/
+.completeShow{
+	position: fixed;
+	left: 1%;
+	top:30%;
+}
+#outer{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 20px;
+	border:1px solid #C9D787;
+	border-radius: 2px;
+	height: 202px;
+}
+#inner{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 18px;
+	height: 0px;
+	background-color: #7D8A2E;
+}
+#completeNumber{
+	margin-top: 5px;
+	font-size: 12px;
+	color: #595241;
+}
+
 @media (max-width: 767px) {
 	.container-fluid .row footer p{
 		color: #fff;
@@ -74,6 +103,10 @@ footer p a{
 	}
 	.row footer .text-left{
 		margin-top: 20px;
+	}
+
+	.completeShow{
+		display: none;
 	}
 
 }

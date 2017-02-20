@@ -96,6 +96,50 @@ addEvent($('btn1'),'click',function(event){
 	}
 });
 
+//进度条
+
+addEvent(document.body,'click',function(event){
+	var compeleCount=0;
+	var checkBoxMark1=true;
+	var checkBoxMark2=true;
+	var tar=event.target||event.srcElement;
+	if(tar.nodeName.toLowerCase()=='label'){
+		return;
+	}
+	if(tar.nodeName.toLowerCase()=='input'){
+		var radioElements=getElementsByClassName('radio');
+		//判断复选框是否选中
+		if(sortFactorsArray.length!=0&&checkBoxMark1){
+			checkBoxMark1=false;
+			compeleCount++;
+		}
+		if(sortFactorsArray.length==0&&!checkBoxMark1){
+			checkBoxMark1=true;
+			compeleCount--;
+		}
+		if(count!=0&&checkBoxMark2){
+			checkBoxMark2=false;
+			compeleCount++;
+		}
+		if(count==0&&!checkBoxMark2){
+			checkBoxMark2=true;
+			compeleCount--;
+		}
+		for(var i=0;i<radioElements.length;i++){
+			var radioInputs=radioElements[i].getElementsByTagName('input');
+			for(var j=0;j<radioInputs.length;j++){
+				if(radioInputs[j].checked==true){
+					compeleCount++;
+				}
+			}
+		}
+	}
+	var percent=compeleCount/19*100;
+	var percentFixed=percent.toFixed(2);
+	$('completeNumber').innerHTML=percentFixed+'%';
+	$('inner').style.height=percentFixed/100*200+'px';
+});
+
 function $(id){
 	return document.getElementById(id);
 }	
@@ -126,4 +170,19 @@ function getSibling(node){
 		n=n.nextSibling;
 	}
 	return n;
+}
+//通过class获取元素
+function getElementsByClassName(className){
+	var wholeObj=document.getElementsByTagName('*');
+	var resultObj=[];
+	var temp=[];
+	for(var i=0;i<wholeObj.length;i++){
+		temp=wholeObj[i].className.split(' ');
+		for(var j=0;j<temp.length;j++){
+			if(temp[j]==className){
+				resultObj.push(wholeObj[i]);
+			}
+		}
+	}
+	return resultObj;
 }
