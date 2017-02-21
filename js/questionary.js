@@ -1,5 +1,4 @@
 
-//待解决问题：提交时检查是否sortFactorsArray为空
 
 /*存放最终选择的影响因素的数组,已排序*/
 var sortFactorsArray=[];
