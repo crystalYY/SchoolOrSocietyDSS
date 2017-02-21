@@ -21,6 +21,7 @@ body{
 	background-size:contain;
 	padding: 0px;
 	margin: 0px;
+	overflow: hidden;
 	margin-bottom: 60px;
 }
 #assitImg{
@@ -71,6 +72,9 @@ body{
 	font-family: '隶书';
 	line-height: 220px;	
 }
+.systemBase .base2 .col-xs-4{
+	border:1px solid black;
+}
 .systemBase .base2 .brief{
 	width:114px;
 	height: 114px;
@@ -83,6 +87,14 @@ body{
 	font-weight: bold;
 	cursor: pointer;
 	margin-top: 40px;
+	margin-left: 20%;
+}
+.systemBase .base2 .baseIntro{
+	margin-top: 20px;
+	color: #2f343b;
+	font-family: '黑体';
+	font-size: 20px;
+	text-align: center;
 }
 @media (max-width: 767px){
 	.header h3{
