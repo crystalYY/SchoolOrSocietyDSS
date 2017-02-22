@@ -130,6 +130,9 @@ body{
 .obtain .obtain1 .suggestion img{
 	margin: 50px auto;
 }
+.obtain .obtain1 p{
+	padding: 0px 3px;
+}
 .obtain .obtain2 p{
 	font-size: 30px;
 	font-family: '隶书';
