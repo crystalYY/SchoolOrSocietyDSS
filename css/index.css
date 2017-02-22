@@ -85,6 +85,7 @@ body{
 	text-align: center;
 	font-size: 20px;
 	font-weight: bold;
+	background: url(../img/down.png) 50% 90% no-repeat;
 	cursor: pointer;
 	margin-top: 40px;
 	margin-left: 25%;
@@ -94,7 +95,7 @@ body{
 	font-family: '黑体';
 	font-size: 20px;
 	text-align: center;
-	
+	display: none;
 }
 
 .obtain{
@@ -341,10 +342,10 @@ footer p a{
 		margin-bottom: 14%;
 	}
 	.masthead .container p.choice{
-		width: 130px;
+		width: 140px;
 		height: 30px;
 		line-height:30px;
-		margin-left: 0px;
+		margin-left: -5px;
 	}
 	.masthead .container p.choice a{
 		font-size: 12px;
