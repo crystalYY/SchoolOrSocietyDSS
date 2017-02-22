@@ -180,7 +180,7 @@ footer p{
 	margin-right: 10%;
 }
 footer p a{
-	margin-left: 20px;
+	padding: 0px 10px;
 }
 @media (max-width: 991px){
 	.masthead .container p.question{
@@ -358,7 +358,6 @@ footer p a{
 	.masthead .container p.choice a{
 		font-size: 12px;
 	}
-
 	.container-fluid .row footer p{
 		font-size: 14px;
 	}
