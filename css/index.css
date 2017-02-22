@@ -243,16 +243,16 @@ footer p a{
 	}
 	.masthead .container p img{
 		height: 26px;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	.masthead .container p.intro{
 		font-size: 16px;
-		margin-left: 3px;
+		margin-left: 0px;
 		margin-bottom: 14%;
 	}
 	.masthead .container p.choice{
-		width: 160px;
+		width: 150px;
 		height: 30px;
 		line-height:30px;
 		margin-left: 0px;
@@ -308,7 +308,10 @@ footer p a{
 	}
 	.obtain .obtain2 p{
 		font-size: 30px;
-		line-height: 220px;	
+		line-height: 160px;	
+	}
+	.obtain .obtain2{
+		margin-bottom: 0px;
 	}
 	/*footer*/
 	.container-fluid .row footer p{
