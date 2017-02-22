@@ -327,10 +327,15 @@ footer p a{
 }
 
 @media (max-width: 450px){
+	.header h3{
+		font-size: 20px;
+		line-height: 60px;
+		margin: 0px;
+	}
 	.masthead .container p.question{
 		font-size: 20px;
-		margin-top: 10%;
-		margin-bottom: 13%;
+		margin-top: 8%;
+		margin-bottom: 10%;
 	}
 	.masthead .container p img{
 		height: 22px;
@@ -339,7 +344,7 @@ footer p a{
 	}
 	.masthead .container p.intro{
 		font-size: 14px;
-		margin-bottom: 14%;
+		margin-bottom: 12%;
 	}
 	.masthead .container p.choice{
 		width: 140px;
@@ -349,5 +354,12 @@ footer p a{
 	}
 	.masthead .container p.choice a{
 		font-size: 12px;
+	}
+
+	.container-fluid .row footer p{
+		font-size: 14px;
+	}
+	.container-fluid .row footer .text-right img{
+		height: 20px;
 	}
 }
