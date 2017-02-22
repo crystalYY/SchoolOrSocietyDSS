@@ -324,3 +324,29 @@ footer p a{
 		margin-top: 20px;
 	}
 }
+
+@media (max-width: 450px){
+	.masthead .container p.question{
+		font-size: 20px;
+		margin-top: 10%;
+		margin-bottom: 13%;
+	}
+	.masthead .container p img{
+		height: 22px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.masthead .container p.intro{
+		font-size: 14px;
+		margin-bottom: 14%;
+	}
+	.masthead .container p.choice{
+		width: 130px;
+		height: 30px;
+		line-height:30px;
+		margin-left: 0px;
+	}
+	.masthead .container p.choice a{
+		font-size: 12px;
+	}
+}
