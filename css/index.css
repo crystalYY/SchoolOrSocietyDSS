@@ -71,7 +71,6 @@ body{
 .systemBase{
 	margin-bottom: 100px;
 	overflow: hidden;
-	display: none;
 }
 .systemBase .base1 p{
 	font-size: 30px;
@@ -93,7 +92,6 @@ body{
 	cursor: pointer;
 	margin-top: 40px;
 	margin-left: 25%;
-	display: none;
 }
 .systemBase .base2 .baseIntro{
 	margin-top: 20px;
@@ -110,9 +108,7 @@ body{
 	margin-bottom: 50px;
 	overflow: hidden;
 }
-#obtainShow{
-	display: none;
-}
+
 .obtain .obtain1 .personalize{
 	background-color: #e3cda4;
 	height: 260px;

@@ -4,6 +4,10 @@ $(document).ready(function(){
 	mastheadHeight=parseInt(mastheadHeight);
 	mastheadHeight+=7;
 	$('.masthead').css('height',mastheadHeight+'px');
+	if($(document).width()>=992){
+		$('#systemBase1').css('display','none');
+		$('#obtainShow').css('display','none');
+	}
 	//背景图随屏幕大小改变
 	$(window).resize(function(){
 		mastheadHeight=$('#assitImg').css('height');
@@ -54,14 +58,16 @@ $(document).ready(function(){
 
 	//滚动条滚动到指定位置加载指定内容
 	$(window).scroll(function(){
-		if($(window).scrollTop()>=$('#systemBaseLine').offset().top){
-			$('#systemBase1').show(2000);
-			$('.brief').fadeIn(3000);
-		}
+		if($(document).width()>=992){
+			if($(window).scrollTop()>=$('#systemBaseLine').offset().top){
+				$('#systemBase1').show(2000);
+				$('.brief').fadeIn(3000);
+			}
 
-		if($(window).scrollTop()>$('#obtainLine').offset().top){
-			$('#obtainShow').slideDown(1000);
-		}
+			if($(window).scrollTop()>$('#obtainLine').offset().top){
+				$('#obtainShow').slideDown(1000);
+			}
+		}		
 	});
 
 });
