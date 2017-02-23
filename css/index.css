@@ -222,7 +222,11 @@ footer p a{
 	.header h3{
 		text-align: center;
 	}
+	.masthead .container p{
+		margin-top: 20%;
+	}
 	.masthead .container p.question{
+		margin-top: 35%;
 		font-size: 34px;
 	}
 	.masthead .container p img{
