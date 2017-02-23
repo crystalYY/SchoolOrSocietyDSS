@@ -10,7 +10,7 @@ addEvent($('sortFactors'),'click',function(event){
 	if(tar.nodeName.toLowerCase()=='label'){
 		return;
 	}
-
+	this.style.borderWidth='0px';
 	for(var i=0;i<sortFactorsInput.length;i++){
 		sortFactorsInput[i].removeAttribute('disabled');
 	}
@@ -56,7 +56,7 @@ addEvent($('character'),'click',function(event){
 	if(tar.nodeName.toLowerCase()=='label'){
 		return;
 	}
-	
+	$('characters').style.borderWidth='0px';
 	var characterInput=this.getElementsByTagName('input');
 	for(var i=0;i<characterInput.length;i++){
 		characterInput[i].removeAttribute('disabled');
@@ -85,11 +85,17 @@ addEvent($('character'),'click',function(event){
 addEvent($('btn1'),'click',function(event){
 	if(sortFactorsArray.length==0){
 		$('locate1').click();
+		$('sortFactors').style.borderWidth='1px';
+		$('sortFactors').style.borderStyle='solid';
+		$('sortFactors').style.borderColor='#DC3522';
 		event.preventDefault();
 		return false;
 	}
 	if(count==0){
 		$('locate2').click();
+		$('characters').style.borderWidth='1px';
+		$('characters').style.borderStyle='solid';
+		$('characters').style.borderColor='#DC3522';
 		event.preventDefault();
 		return false;
 	}
