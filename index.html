@@ -22,21 +22,24 @@
 	</div>
 
 	<div class="jumbotron masthead" id="mastheadBg">
+		<div id="systemBaseLine"></div>	
 		<img src="img/assistImg.jpg" id='assitImg' class="img-responsive" />
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-sm-offset-2 col-xs-6 col-xs-offset-2">
-					<p class="text-left question"><span>考研</span><img src="img/question.png" alt="question"><span>就业</span></p>
+					<p class="text-left question" id="questionImg"><span>考研</span><img src="img/question.png" alt="question"><span>就业</span></p>
 					<p class="intro">基于数据的科学决策</p>
-					<p class="choice text-center"><a href="questionary.html" title="开启你的科学决策之旅">make your choice now <span class="glyphicon glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+					<p class="choice text-center" id="choiceBtn"><a href="questionary.html" title="开启你的科学决策之旅">make your choice now <span class="glyphicon glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
 					</p>
 				</div>
 			</div>
+			<div id="obtainLine"></div>
 		</div>
 	</div>
-
+	
+	
 	<div class="container">
-		<div class="row systemBase">
+		<div class="row systemBase" id="systemBase1">		
 			<div class="col-md-4 col-xs-12 base1">
 				<p>系统基于</p>
 			</div>
@@ -56,11 +59,14 @@
 					</div>
 				</div>
 			</div>
+			
 		</div>
 	</div>
+
+	
 	<div class="jumbotron obtain">
-		<div class="row">
-			<div class="col-xs-12 obtain2 hidden-lg">
+		<div class="row" id="obtainShow">
+			<div class="col-xs-12 obtain2 hidden-md hidden-lg">
 				<p>您将获得</p>
 			</div>
 			<div class="col-md-8 col-xs-12">
@@ -75,10 +81,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 obtain2 visible-lg-block">
+			<div class="col-md-4 obtain2 visible-md-block visible-lg-block">
 				<p>您将获得</p>
 			</div>
 		</div>
+
+		<div id="footerLine">			
+		</div>
+
 		<div class="row line">
 			<div class="col-xs-12 transverseLine">				
 			</div>
@@ -107,7 +117,8 @@
 			</footer>
 		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jQueryRotate.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
