@@ -3,7 +3,6 @@ body{
 	word-break: break-all;
 	font-family: "微软雅黑","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
 	color: #2f343b;
-	min-height: 800px;
 }
 
 
@@ -17,13 +16,13 @@ body{
 	margin: 0px;
 }
 .masthead{
-	background-color: #fff;
 	background: url(../img/masthead.jpg) left top no-repeat;
-	background-size:contain;
+	background-size:cover;
 	padding: 0px;
 	margin: 0px;
 	overflow-x: hidden;
 	margin-bottom: 60px;
+	height: 545px;
 }
 #assitImg{
 	display: none;
@@ -71,6 +70,7 @@ body{
 .systemBase{
 	margin-bottom: 100px;
 	overflow: hidden;
+	display: none;
 }
 .systemBase .base1 p{
 	font-size: 30px;
@@ -107,6 +107,9 @@ body{
 	padding:0px;
 	margin-bottom: 50px;
 	overflow: hidden;
+}
+#obtainShow{
+	display: none;
 }
 
 .obtain .obtain1 .personalize{
@@ -188,36 +191,13 @@ footer p a{
 	padding: 0px 10px;
 }
 @media (max-width: 991px){
-	.masthead .container p.question{
-		font-size: 32px;
-		margin-top: 16%;
-		margin-bottom: 13%;
-	}
-	.masthead .container p img{
-		height: 41px;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-	.masthead .container p.intro{
-		font-size: 22px;
-		margin-left: 6px;
-		margin-bottom: 14%;
+	.masthead .container p{
+		text-align: center;
 	}
 	.masthead .container p.choice{
-		width: 200px;
-		height: 40px;
-		line-height: 40px;
-		margin-left: 5px;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	.masthead .container p.choice a{
-		display: block;
-		font-size: 16px;
-	}
-	.masthead .container p.choice span{
-		font-size: 14px;
-		padding-left:5px;
-	}
-
 	.systemBase{
 		margin-bottom: 80px;
 	}
@@ -241,36 +221,25 @@ footer p a{
 	.header h3{
 		text-align: center;
 	}
-	
-	.masthead{
-		margin-bottom: 0px;
-	}
 	.masthead .container p.question{
-		font-size: 24px;
-		margin-top: 10%;
-		margin-bottom: 13%;
+		font-size: 34px;
 	}
 	.masthead .container p img{
-		height: 26px;
-		padding-left: 15px;
-		padding-right: 15px;
+		height: 40px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 	.masthead .container p.intro{
-		font-size: 16px;
-		margin-left: 0px;
-		margin-bottom: 14%;
+		font-size: 26px;
 	}
 	.masthead .container p.choice{
-		width: 150px;
-		height: 30px;
-		line-height:30px;
-		margin-left: 0px;
+		width: 240px;
 	}
 	.masthead .container p.choice a{
-		font-size: 12px;
+		font-size: 18px;
 	}
 	.masthead .container p.choice span{
-		display: none;
+		font-size: 14px;
 	}
 	
 	.systemBase{
@@ -339,29 +308,6 @@ footer p a{
 		font-size: 20px;
 		line-height: 60px;
 		margin: 0px;
-	}
-	.masthead .container p.question{
-		font-size: 20px;
-		margin-top: 8%;
-		margin-bottom: 10%;
-	}
-	.masthead .container p img{
-		height: 22px;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	.masthead .container p.intro{
-		font-size: 14px;
-		margin-bottom: 12%;
-	}
-	.masthead .container p.choice{
-		width: 140px;
-		height: 30px;
-		line-height:30px;
-		margin-left: -5px;
-	}
-	.masthead .container p.choice a{
-		font-size: 12px;
 	}
 	.container-fluid .row footer p{
 		font-size: 14px;
