@@ -193,6 +193,7 @@ footer p a{
 @media (max-width: 991px){
 	.masthead .container p{
 		text-align: center;
+		margin-top: 15%;
 	}
 	.masthead .container p.choice{
 		margin-left: auto;
