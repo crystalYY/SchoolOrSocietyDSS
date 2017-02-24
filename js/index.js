@@ -47,11 +47,11 @@ $(document).ready(function(){
 	//滚动条滚动到指定位置加载指定内容
 	$(window).scroll(function(){
 		if($(window).scrollTop()>=$(window).height()/3){
-			$('#systemBase1').show(2000);
-			$('.brief').fadeIn(3000);
+			$('#systemBase1').show(1000);
+			$('.brief').fadeIn(2000);
 		}
 
-		if($(window).scrollTop()>$(window).height()){
+		if($(window).scrollTop()>=$(window).height()*2/3){
 			$('#obtainShow').slideDown(1000);
 		}	
 	});
