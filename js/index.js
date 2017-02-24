@@ -1,5 +1,10 @@
 $(document).ready(function(){
-
+	var windowHeight=$(window).height();
+	$('#mastheadBg').css('height',windowHeight);
+	$(window).resize(function(){
+		var windowHeight=$(window).height();
+		$('#mastheadBg').css('height',windowHeight);
+	});
 	//问号的动画
 
 	function rotateImg(){
