@@ -41,6 +41,9 @@ li{font-weight: bold; padding-bottom:15px; border-bottom: 1px solid #cccccc; mar
 .content form #character label{
 	display: block-inline;
 }
+#beWork{
+	display: none;
+}
 .subt{
 	width: 200px;
 	margin: 0 auto;

@@ -81,6 +81,8 @@ addEvent($('character'),'click',function(event){
 	$('totalFactor2').innerHTML=count;
 });
 
+
+
 //验证表单提交
 addEvent($('btn1'),'click',function(event){
 	if(sortFactorsArray.length==0){
@@ -101,7 +103,7 @@ addEvent($('btn1'),'click',function(event){
 	}
 });
 
-//进度条
+//进度条以及处理题目之间的关联关系
 
 addEvent(document.body,'click',function(event){
 	var compeleCount=0;
@@ -110,6 +112,12 @@ addEvent(document.body,'click',function(event){
 	var tar=event.target||event.srcElement;
 	if(tar.nodeName.toLowerCase()=='label'){
 		return;
+	}
+	//处理题目之间的关联关系
+	if($('four2').checked==true||$('four3').checked==true||$('four4').checked==true){
+		$('beWork').style.display='list-item';
+	}else{
+		$('beWork').style.display='none';
 	}
 	var radioElements=getElementsByClassName('radio');
 	//判断复选框是否选中
@@ -137,8 +145,14 @@ addEvent(document.body,'click',function(event){
 			}
 		}
 	}
-	var percent=compeleCount/19*100;
-	var percentFixed=percent.toFixed(2);
+	if(getStyle($('beWork'),'display')=='list-item'){
+		var percent=compeleCount/19*100;
+		var percentFixed=percent.toFixed(2);
+	}else{
+		var percent=compeleCount/18*100;
+		var percentFixed=percent.toFixed(2);
+	}
+	
 	$('completeNumber').innerHTML=percentFixed+'%';
 	$('inner').style.height=percentFixed/100*200+'px';
 });
@@ -188,4 +202,13 @@ function getElementsByClassName(className){
 		}
 	}
 	return resultObj;
+}
+
+//获取样式
+function getStyle(obj,sty){
+	if(obj.currentStyle){
+		return obj.currentStyle[sty];
+	}else{
+		return getComputedStyle(obj,null)[sty];
+	}
 }

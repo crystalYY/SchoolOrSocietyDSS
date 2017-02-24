@@ -20,7 +20,7 @@ body{
 	background-size:cover;
 	padding: 0px;
 	margin: 0px;
-	overflow-x: hidden;
+	overflow: hidden;
 	margin-bottom: 60px;
 	height: 545px;
 }
@@ -223,10 +223,10 @@ footer p a{
 		text-align: center;
 	}
 	.masthead .container p{
-		margin-top: 20%;
+		margin-top: 15%;
 	}
 	.masthead .container p.question{
-		margin-top: 35%;
+		margin-top: 20%;
 		font-size: 34px;
 	}
 	.masthead .container p img{
