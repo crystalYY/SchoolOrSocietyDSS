@@ -46,14 +46,14 @@ $(document).ready(function(){
 
 	//滚动条滚动到指定位置加载指定内容
 	$(window).scroll(function(){
-		if($(window).scrollTop()>=$('#systemBaseLine').offset().top){
+		if($(window).scrollTop()>=$(window).height()/3){
 			$('#systemBase1').show(2000);
 			$('.brief').fadeIn(3000);
 		}
 
-		if($(window).scrollTop()>$('#obtainLine').offset().top){
+		if($(window).scrollTop()>$(window).height()){
 			$('#obtainShow').slideDown(1000);
 		}	
 	});
-
+	console.log($(window).height());
 });
