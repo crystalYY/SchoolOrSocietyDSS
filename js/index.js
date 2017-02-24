@@ -1,7 +1,4 @@
 $(document).ready(function(){
-	if($(window).height()){
-		alert('hhhh');
-	}
 	var windowHeight=$(window).height();
 	$('#mastheadBg').css('height',windowHeight);
 	$(window).resize(function(){
