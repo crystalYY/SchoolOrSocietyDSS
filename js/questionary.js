@@ -146,10 +146,10 @@ addEvent(document.body,'click',function(event){
 		}
 	}
 	if(getStyle($('beWork'),'display')=='list-item'){
-		var percent=compeleCount/19*100;
+		var percent=compeleCount/18*100;
 		var percentFixed=percent.toFixed(2);
 	}else{
-		var percent=compeleCount/18*100;
+		var percent=compeleCount/17*100;
 		var percentFixed=percent.toFixed(2);
 	}
 	
