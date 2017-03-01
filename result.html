@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/dssicon.ico" type="image/x-icon" />
+    <meta name="description" content="基于数据的科学决策系统">
+    <meta name="keywords" content="data, model, dss, 决策支持系统, 考研, 就业, 决策">
+    <meta name="author" content="XTU Grass team">
+	<title>result</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/result.css"></head>
+<body>
+	<!--结果展示部分-->
+	<div class="container" id="resultDisplay">
+		<div class="row">
+			<div class="col-xs-12 out-col">
+				<div class="row resultHead">
+					<div class="col-sm-6 col-xs-12">
+						<p class="text-right">经过一番数据的计算,您较适合</p>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<p id='result' class="resultShow text-center">考研</p>
+					</div>
+				</div>
+				<div class="row resultContent">
+					<div class="col-xs-6 colBorder">
+						<p class="text-center resultContentHead" id="resultContentHead1">与选择<span id="result1">就业</span>的同学相比</p>
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<p id="diff1" class="text-center">项目</p>												
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<p id="diff2" class="text-center">实习</p>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<p id="diff3" class="text-center">专业</p>
+							</div>
+						</div>
+						<p class="text-center contrast">差距较大</p>
+					</div>
+					<div class="col-xs-6">
+						<p class="text-center resultContentHead" id="resultContentHead2">与选择<span id="result2">考研</span>的同学相比</p>
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<p id="diff4" class="text-center">学校</p>							
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<p id="diff5" class="text-center">证书</p>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<p id="diff6" class="text-center">家庭</p>
+							</div>
+						</div>
+						<p class="text-center contrast">较有优势</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -97,6 +97,7 @@ footer p a{
 	color: #595241;
 }
 
+
 @media (max-width: 767px) {
 	.container-fluid .row footer p{
 		color: #fff;

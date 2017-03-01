@@ -92,14 +92,15 @@ addEvent($('btn1'),'click',function(event){
 		$('sortFactors').style.borderColor='#DC3522';
 		event.preventDefault();
 		return false;
-	}
-	if(count==0){
+	}else if(count==0){
 		$('locate2').click();
 		$('characters').style.borderWidth='1px';
 		$('characters').style.borderStyle='solid';
 		$('characters').style.borderColor='#DC3522';
 		event.preventDefault();
 		return false;
+	}else{
+		
 	}
 });
 

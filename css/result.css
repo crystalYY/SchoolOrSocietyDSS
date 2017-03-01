@@ -1,0 +1,100 @@
+/*全局样式*/
+body{
+	word-break: break-all;
+	font-family: "微软雅黑","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+}
+#resultDisplay .out-col{
+	background-color: #2f343b;
+}
+#resultDisplay .resultHead{
+	height: 260px;
+	padding:110px 0px;
+	width:100%;
+	margin: 0px;
+}
+#resultDisplay .resultHead p{
+	color: #fff;
+	font-size: 24px;
+}
+#resultDisplay .resultHead p.resultShow{
+	width: 30%;
+	height: 60px;
+	background-color: #7e827a;
+	border-radius: 5px;
+	line-height: 60px;
+	margin-top:-10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#resultDisplay .resultContent{
+	background-color: #fff;
+}
+#resultDisplay .resultContent .col-xs-6{
+	padding: 0px;
+}
+#resultDisplay .resultContent .colBorder{
+	border-right: 1px solid #2f343b;
+}
+#resultDisplay .resultContent p{
+	color: #32331d;
+	font-size: 24px;
+}
+#resultDisplay .resultContent p.resultContentHead{
+	height: 60px;
+	width: 90%;
+	margin-top: -60px;
+	background-color: #fff;
+	line-height: 60px;
+}
+#resultDisplay .resultContent #resultContentHead1{
+	float: right;
+}
+#resultDisplay .resultContent #resultContentHead2{
+	float: left;
+}
+#resultDisplay .resultContent .row{
+	margin: 60px 10px;
+}
+#resultDisplay .resultContent .row p{
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	border: 3px solid #703030;
+	border-radius: 5px;
+	padding: 15px;
+}
+#resultDisplay .resultContent .contrast{
+	color: #703030;
+}
+@media (max-width: 767px) {
+	#resultDisplay .resultHead{
+		padding-top:80px;
+	}
+	#resultDisplay .resultHead p{
+		font-size:20px;
+		text-align: center;
+	}
+	#resultDisplay .resultHead #result{
+		margin-top: 10px;
+		height: 50px;
+		line-height: 50px;
+	}
+	#resultDisplay .resultContent p{
+		font-size: 18px;
+	}
+	#resultDisplay .resultContent p.resultContentHead{
+		width: 100%;
+	}
+	#resultDisplay .resultContent .row{
+		margin: 30px 10px;
+	}
+
+}
+@media (max-width: 500px){
+	#resultDisplay .resultHead p{
+		font-size: 18px;
+	}
+	#resultDisplay .resultContent p{
+		font-size:14px;
+	}
+}
