@@ -96,6 +96,9 @@ footer p a{
 	font-size: 12px;
 	color: #595241;
 }
+#testSubmit{
+	display: block;
+}
 
 
 @media (max-width: 767px) {
